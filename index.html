@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Maxwell tast</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header></header>
+  <main class="main">
+    <div class="main__container">
+      <section class="main__steps steps">
+        <div class="steps__step steps__step--active">
+          <h2 class="steps__title">Данные о компании</h2>
+          <p class="steps__subtitle">Название и адрес компании</p>
+        </div>
+        <div class="steps__step">
+          <h2 class="steps__title">Категории товаров</h2>
+          <p class="steps__subtitle">Выбор категории товаров</p>
+        </div>
+        <div class="steps__step">
+          <h2 class="steps__title">Выбор % кэшбэка</h2>
+          <p class="steps__subtitle">Выбор размера кэшбэка, %</p>
+        </div>
+      </section>
+
+      <section class="main__content">
+        <div class="card">
+          <div class="card__header">Информация</div>
+
+          <div class="card__title-box">
+            <h3 class="card__title">Кэшбэк за покупки</h3>
+            <p class="card__subtitle">Общая информация о кэшбэке</p>
+          </div>
+          <div class="card__content">
+            <p class="card__paragraph"><span class="card__bold">Повышайте лояльность покупателей</span> с помощью кэшбэка и получайте новые заказы.</p>
+            <p class="card__paragraph">Потребители заинтересованы в получении кэшбэка с покупок. Возвращайте покупателям часть потраченных денег, и они возвратятся, чтобы приобрести именно ваш товар. Так вы сформируете базу постоянных и лояльных покупателей
+            </p>
+            <div class="card__button-box">
+              <button class="button">Настроить кэшбек</button>
+              <a href="#" class="link">Смотреть презентацию</a>
+            </div>
+            <form  class="card__agreement agreement" action="#" method="POST">
+              <p class="checkbox agreement__checkbox">
+                <input class="agreement__input visually-hidden" type="checkbox" name="agreement-checkbox" id="agreement-checkbox">
+                <label class="agreement__label" for="agreement-checkbox">
+                  Согласен с <a class="agreement__link" href="#">Условиями пользовательского соглашения</a> и <a class="agreement__link" href="#">Политики конфиденциальности</a>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <div class="sign-up card">
+          <div class="card__header">Регистрационная Информация</div>
+          <div class="sign-up__title-box">
+            <h3 class="sign-up__title card__title">Данные о компании</h3>
+            <p class="sign-up__subtitle">Укажите название и геолокацию</p>
+          </div>
+          <form class="form" action="#" method="POST">
+            <fieldset class="form__group">
+              <p class="form__item">
+                <label class="form__label" for="company-name">
+                  Введите название вашей компании
+                </label>
+                <input class="form__text" type="text" id="company-name" name="name">
+              </p>
+              <p class="form__item">
+                <label class="form__label" for="company-address">
+                  Укажите адрес компании
+                </label>
+                <input class="form__text" type="text"  id="company-address" name="address">
+              </p>
+            </fieldset>
+            <button class="form__button button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer></footer>
+</body>
+</html>
