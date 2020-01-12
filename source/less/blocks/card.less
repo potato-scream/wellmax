@@ -1,0 +1,88 @@
+.card {
+  width: 640px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  border: 1px solid #F1F3F8;
+}
+
+.card__header {
+  width: 560px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  margin: 0 auto;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.card__title-box {
+  padding-left: 200px;
+  padding-top: 24px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #F8F9FC;
+    top: 24px;
+    left: 96px;
+    background-image: url("/img/cash.svg");
+    background-repeat: no-repeat;
+    background-position: 23px 20px;
+  }
+}
+
+.card__title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 30px;
+  line-height: 40px;
+  color: #343A47;
+  font-weight: normal;
+}
+
+.card__subtitle {
+  font-size: 13px;
+  line-height: 17px;
+  color: #9098AD;
+}
+
+.card__content {
+  padding-top: 136px;
+  padding-left: 64px;
+  padding-bottom: 80px;
+  padding-right: 64px;
+}
+
+.card__bold {
+  font-weight: bold;
+}
+
+.card__button-box {
+  margin-top: 48px;
+  .flex();
+  justify-content: space-between;
+}
+
+.card__agreement {
+  margin-top: 48px;
+}
+
+.card__paragraph {
+  margin: 0;
+
+  &:last-of-type {
+    margin-top: 24px;
+  }
+}
+
+.card__agreement {
+  font-size: 13px;
+  line-height: 17px;
+}

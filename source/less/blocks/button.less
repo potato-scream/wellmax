@@ -1,0 +1,28 @@
+.button {
+  width: 248px;
+  border: none;
+  background-color: #4C82FF;
+  box-shadow: 0px 16.9257px 16.9257px rgba(45, 102, 235, 0.13), 0px 4.23142px 8.46285px rgba(45, 105, 235, 0.12), 0px -2.11571px 5.28928px rgba(76, 132, 255, 0.05);
+  border-radius: 52px;
+  color: #FFFFFF;
+  line-height: 27px;
+  padding-left: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  text-align: left;
+
+  &::before {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    content: "";
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    right: 6px;
+    top: 6px;
+    background-image: url("/img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}

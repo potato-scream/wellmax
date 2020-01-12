@@ -1,0 +1,34 @@
+.agreement__checkbox {
+  padding-left: 37px;
+}
+
+.agreement__label {
+  color: #9098AD;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -37px;
+    width: 18px;
+    height: 18px;
+    background-color: #467BF6;
+    border-radius: 5px;
+  }
+}
+
+.agreement__input:checked + .agreement__label::before {
+  background-image: url("/img/checkbox-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.agreement__input:focus + .agreement__label::before {
+  outline: auto;
+}
+
+.agreement__link {
+  color: #9098AD;
+  text-decoration: underline;
+}
